@@ -1039,10 +1039,18 @@
                             range: range
                         },
                         {
-                            label: 'loadstring(code, env)',
+                            label: 'loadstring(code)',
                             kind: monaco.languages.CompletionItemKind.Function,
                             documentation: 'Loads a string with an optional chunkname',
-                            insertText: 'loadstring("${1:code}", ${2:getgenv()})()',
+                            insertText: 'loadstring("${1:code}")()',
+                            insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
+                            range: range
+                        },
+                        {
+                            label: 'loadstring(httpget)',
+                            kind: monaco.languages.CompletionItemKind.Function,
+                            documentation: 'Loads a string from game:HttpGet with an optional chunkname',
+                            insertText: 'loadstring(${1:game:HttpGet("Url")})()',
                             insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
                             range: range
                         },
