@@ -19,7 +19,7 @@
             align-items: center;
             margin-top: 0px;
             gap: 8px;
-            border-bottom: 1px solid #4242442c;
+            border-bottom: 1px solid #2d2d30;
             position: fixed;
             top: 0;
             width: 100%;
@@ -45,7 +45,7 @@
             color: #c7c7c7;
             padding: 8px 20px;
             border-radius: 10px 16px 10px 16px;
-            border: 1px solid #42424400;
+            border: 1px solid transparent;
             cursor: pointer;
             user-select: none;
             font-size: 13px;
@@ -59,7 +59,10 @@
         }
         .tab.active {
             background-color: #232323;
-            border: 1px solid #4242442c;
+            border-top: 1px solid #404042;
+            border-bottom: 1px solid #2d2d30;
+            border-left: 1px solid #2f2f31;
+            border-right: 1px solid #2f2f31;
             color: #c7c7c7;
         }
         .tab:hover {
