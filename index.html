@@ -1055,7 +1055,7 @@
                             label: 'loadstring(httpget)',
                             kind: monaco.languages.CompletionItemKind.Function,
                             documentation: 'Loads a string from game:HttpGet with an optional chunkname',
-                            insertText: 'loadstring(${1:game:HttpGet("Url")})()',
+                            insertText: 'loadstring(game:HttpGet("${1:Url}"))()',
                             insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
                             range: range
                         },
